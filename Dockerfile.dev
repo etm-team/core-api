@@ -1,0 +1,5 @@
+FROM keymetrics/pm2:10-slim
+
+WORKDIR /var/service
+
+# We volume in files for watch purposes
