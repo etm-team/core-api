@@ -1,5 +1,5 @@
 {
-  "name": "etm-api",
+  "name": "core-api",
   "script": "dist/index.js",
   "ignore_watch": ["src"],
   "kill_timeout": 10000

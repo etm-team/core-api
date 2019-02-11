@@ -7,6 +7,7 @@
     "build": "tsc",
     "dev": "tsc -w",
     "start": "node dist/index.js",
+    "dev-start": "pm2 start dist/index.js --watch --no-daemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "@types/boom": "^7.2.1",
     "@types/hapi": "^18.0.0",
     "@types/joi": "^14.3.1",
+    "pm2": "^3.2.9",
     "prettier": "^1.16.4",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
@@ -24,6 +26,9 @@
   },
   "dependencies": {
     "boom": "^7.3.0",
+    "good": "^8.1.2",
+    "good-console": "^7.1.0",
+    "good-squeeze": "^5.1.0",
     "hapi": "^18.0.1",
     "joi": "^14.3.1"
   }

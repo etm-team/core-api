@@ -9,7 +9,7 @@
       {
         "singleQuote": true,
         "bracketSpacing": false,
-        "printWidth": 100
+        "printWidth": 120
       }
     ],
     "interface-name": false,
@@ -26,6 +26,7 @@
       "check-preblock",
       "check-rest-spread"
     ],
+    "semicolon": [true, "always"],
     "variable-name": [
       true,
       "ban-keywords",

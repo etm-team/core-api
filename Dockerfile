@@ -16,5 +16,5 @@ COPY --from=0 /var/build/package-lock.json .
 RUN npm install --production
 
 COPY docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"] 
+ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["etm-api"]
