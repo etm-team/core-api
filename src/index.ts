@@ -1,6 +1,7 @@
 import hapi from 'hapi';
 
 import logging from './plugins/logging';
+import auth from './plugins/auth';
 import routes from './routes';
 
 const port = process.env.PORT || 5000;
@@ -20,7 +21,7 @@ const gracefulShutdown = () => {
 process.on('SIGINT', gracefulShutdown);
 process.on('SIGTERM', gracefulShutdown);
 
-server.register(logging).then(() => {
+server.register([logging, auth]).then(() => {
   server.route(routes);
   return server.start().then(() => console.log('Server started'));
 });
