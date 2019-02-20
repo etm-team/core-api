@@ -25,11 +25,14 @@
     "typescript": "^3.3.1"
   },
   "dependencies": {
+    "@types/bluebird": "^3.5.25",
+    "bluebird": "^3.5.3",
     "boom": "^7.3.0",
     "good": "^8.1.2",
     "good-console": "^7.1.0",
     "good-squeeze": "^5.1.0",
     "hapi": "^18.0.1",
-    "joi": "^14.3.1"
+    "joi": "^14.3.1",
+    "pg-promise": "^8.5.5"
   }
 }
