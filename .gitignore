@@ -68,3 +68,6 @@ dist/
 
 # random mac stuff
 .DS_Store
+
+# ignore local config
+config/local*.json
